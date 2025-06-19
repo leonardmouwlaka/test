@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Me - FOx</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <style>
+    .nav-custom {
+      background-color: #7dd4ca;
+      position: fixed;
+      z-index: 999;
+      width: 100%;
+      top: 0;
+    }
+
+    .hero-section {
+      position: relative;
+      
+      padding-top: 100px;
+      padding-bottom: 60px;
+      min-height: 100vh;
+    }
+
+    body {
+      background: linear-gradient(135deg, #E3FDFD, #CBF1F5);
+      margin: 0;
+      margin-top: -6%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    h1, h2 {
+      color: #03506F;
+    }
+
+    h5 {
+      font-weight: bold;
+      color: #03506F;
+    }
+
+    /* .navbar-nav .nav-link {
+      color: #000;
+      font-weight: 500;
+    } */
+
+    .navbar-nav .nav-link:hover {
+      color: #03506F;
+    }
+
+    .footer {
+      background-color: #7dd4ca;
+      text-align: center;
+      padding: 10px;
+      font-size: 0.9em;
+      color: #333;
+    }
+
+    .highlight-box {
+      margin-top: 6%;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .info-card {
+      background-color: #ffffffd4;
+      border-radius: 20px;
+      padding: 55px;
+      height: 100%;
+    }
+
+    .progress-bar {
+      background: #ddd;
+      border-radius: 20px;
+      overflow: hidden;
+      margin-bottom: 10px;
+    }
+
+    .progress {
+      height: 20px;
+      line-height: 20px;
+      color: white;
+      padding-left: 10px;
+      font-size: 0.9rem;
+    }
+
+    .html { width: 90%; background: #008891; }
+    .css { width: 75%; background: #008891; }
+    .bootstrap { width: 60%; background: #008891; }
+    .js { width: 60%; background: #008891; }
+
+    @media (max-width: 767px) {
+      .info-card, .skills-section {
+        margin-top: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg nav-custom">
+    <div class="container">
+      <a class="navbar-brand" href="#">FOx</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="About-me.html">About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="Portofolio.html">Project</a></li>
+          <li class="nav-item"><a class="nav-link" href="contak.html">Kontak</a></li>
+          <li class="nav-item"><a class="nav-link" href="Blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="Sertifikat.html">Sertifikat</a></li>
+          <li class="nav-item"><a class="nav-link" href="galeri.html">Galeri</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero / Content Section -->
+  <section class="hero-section">
+    <div class="container highlight-box" data-aos="fade-up">
+      <div class="row g-4">
+        <!-- Informasi Biodata, Pendidikan, Pengalaman -->
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="info-card">
+            <h4 class="mb-4 text-center">Tentang Saya</h4>
+            <div class="row">
+              <div class="col-12 col-md-4">
+                <h5>Biodata</h5>
+                <ul class="list-unstyled">
+                  <li><strong>Nama:</strong> Leonard Beny Mouwlaka</li>
+                  <li><strong>Universitas:</strong> UNKRISWINA Sumba</li>
+                  <li><strong>Program Studi:</strong> Teknik Informatika</li>
+                </ul>
+              </div>
+              <div class="col-12 col-md-4">
+                <h5>Pendidikan</h5>
+                <ul class="list-unstyled">
+                  <li>2019–2022: SMA Kristen Payeti</li>
+                  <li>2023–Sekarang: UNKRISWINA</li>
+                </ul>
+              </div>
+              <div class="col-12 col-md-4">
+                <h5>Pengalaman</h5>
+                <ul class="list-unstyled">
+                  <li>Peserta pelatihan AI</li>
+                  <li>Anggota Sumba Code</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Keterampilan -->
+        <div class="col-md-6 skills-section" data-aos="fade-up" data-aos-delay="200">
+          <h2 class="mb-4 text-center">Keterampilan</h2>
+          <div class="progress-bar" data-aos="fade-right"><div class="progress html">HTML - 90%</div></div>
+          <div class="progress-bar" data-aos="fade-right" data-aos-delay="100"><div class="progress css">CSS - 75%</div></div>
+          <div class="progress-bar" data-aos="fade-right" data-aos-delay="200"><div class="progress bootstrap">Bootstrap - 60%</div></div>
+          <div class="progress-bar" data-aos="fade-right" data-aos-delay="300"><div class="progress js">JavaScript - 60%</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p class="mb-0">FOx | copyright @ 2025</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+</body>
+</html>

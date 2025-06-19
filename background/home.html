@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Leonard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+        .nav-custom {
+      /* background-color: #7dd4ca; */
+      position: fixed;
+      z-index: 999;
+      width: 100%;
+      top: 0%;
+    }
+    /* Global */
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: rgb(12, 9, 9);
+      
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+    }
+
+    /* Hero Section */
+    .hero-section {
+      position: relative;
+      padding: 100px 20px;
+      background: linear-gradient(135deg, #171818, #98a3a3);
+      overflow: hidden;
+      color: black;
+    }
+
+    /* Background Gambar Dekoratif */
+    .hero-section::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: url('bg-pattern.png') repeat;
+      opacity: 0.05;
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-img img {
+      max-width: 100%;
+      border-radius: 16px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+      width: 70%;
+    }
+
+    .hero-img img:hover {
+      transform: scale(1.03);
+    }
+
+    .hero-text h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+
+    .btn-primary {
+      border-radius: 20px;
+      padding: 10px 24px;
+    }
+
+    /* Responsive tweaks */
+    @media (max-width: 768px) {
+      .hero-text {
+        text-align: center;
+      }
+      .hero-img {
+        margin-top: 30px;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+   <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm nav-custom">
+    <div class="container">
+      <a class="navbar-brand" href="#">FOx Portofolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About Me</a></li>
+          <li class="nav-item"><a class="nav-link active" href="geleri.html">Galeri</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container hero-content">
+      <div class="row align-items-center">
+        <div class="col-md-6 hero-text">
+          <h1>Halo Selamat Datang di website Portofolio Saya</h1>
+          <h4>Saya Leonard Beny Mouwlaka</h4>
+          <p>
+            Mahasiswa Universitas Kristen Wira Wacana Sumba, Prodi Teknik Informatika.<br>
+            Saya tertarik di bidang Programming dan Fullstack Developer.
+          </p>
+          <a href="back.html" class="btn btn-primary">Goo</a>
+        </div>
+        <div class="col-md-6 hero-img">
+          <img src="WhatsApp Image 2025-05-26 at 22.44.34.jpeg" alt="Foto Leonard ms-5">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Footer -->
+<!-- <footer class="text-center text-white py-4" style="background-color: rgba(14, 13, 13, 0.861);">
+    <p class="mb-0">© 2025 Leonard Beny Mouwlaka. All rights reserved.</p>
+  </footer> -->
+  
+</body>
+</html>
